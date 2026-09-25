@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Menu, X } from 'lucide-react';
-import resumePdf from '../assets/Praveen-Kumar-Reddy-Resume.pdf';
 import './Navbar.css';
 
 const navLinks = [
@@ -53,31 +52,15 @@ export default function Navbar() {
               {link.name}
             </a>
           ))}
-          <a 
-            href={resumePdf} 
-            download="Praveen-Kumar-Reddy-Resume.pdf"
-            className="nav-btn-resume"
-          >
-            DOWNLOAD RESUME
-          </a>
         </div>
 
         {/* Mobile Toggle */}
-        <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
-          <a 
-            href={resumePdf} 
-            download="Praveen-Kumar-Reddy-Resume.pdf"
-            className="nav-btn-resume-mobile"
-          >
-            RESUME
-          </a>
-          <button 
-            className="mobile-menu-btn"
-            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-          >
-            {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
-          </button>
-        </div>
+        <button 
+          className="mobile-menu-btn"
+          onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+        >
+          {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+        </button>
       </div>
 
       {/* Mobile Nav */}
