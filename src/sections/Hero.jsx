@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { motion, useAnimation } from 'framer-motion';
 import { Code2, User, Mail, ArrowRight } from 'lucide-react';
 import profilePhoto from '../assets/profile-photo.jpg';
+import resumePdf from '../assets/Praveen-Kumar-Reddy-Resume.pdf';
 import './Hero.css';
 
 export default function Hero() {
@@ -78,26 +79,13 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}
           >
-            <a href="#projects" className="btn-primary-new">
-              <span>EXPLORE MY WORK</span>
+            <a 
+              href={resumePdf} 
+              download="Praveen-Kumar-Reddy-Resume.pdf" 
+              className="btn-primary-new"
+            >
+              <span>DOWNLOAD RESUME</span>
               <ArrowRight size={16} className="btn-arrow" />
-            </a>
-          </motion.div>
-          
-          <motion.div 
-            className="hero-socials-new"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.7 }}
-          >
-            <a href="#" className="social-icon-new" aria-label="GitHub">
-              <Code2 size={20} />
-            </a>
-            <a href="#" className="social-icon-new" aria-label="LinkedIn">
-              <User size={20} />
-            </a>
-            <a href="#" className="social-icon-new" aria-label="Email">
-              <Mail size={20} />
             </a>
           </motion.div>
         </div>

@@ -8,8 +8,8 @@ export default function Contact() {
     {
       icon: <Mail size={24} />,
       title: 'Email',
-      value: 'dharmavarapupraveenkumarreddy@gmaile.com',
-      link: 'mailto:dharmavarapupraveenkumarreddy@gmaile.com',
+      value: 'dharmavarapupraveenkumarreddy@gmail.com',
+      link: 'mailto:dharmavarapupraveenkumarreddy@gmail.com',
       isClickable: true
     },
     {

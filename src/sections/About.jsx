@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { FaLinkedin, FaGithub } from 'react-icons/fa';
 import { SiLeetcode } from 'react-icons/si';
+import resumePdf from '../assets/Praveen-Kumar-Reddy-Resume.pdf';
 import './About.css';
 
 export default function About() {
@@ -78,6 +79,14 @@ export default function About() {
             >
               <SiLeetcode className="profile-icon" />
               <span className="profile-name">LEETCODE</span>
+            </a>
+            
+            <a 
+              href={resumePdf} 
+              download="Praveen-Kumar-Reddy-Resume.pdf"
+              className="profile-link"
+            >
+              <span className="profile-name" style={{ color: 'var(--accent-cyan)' }}>DOWNLOAD RESUME</span>
             </a>
           </motion.div>
         </motion.div>
