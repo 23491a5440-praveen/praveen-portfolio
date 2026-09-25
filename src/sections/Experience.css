@@ -153,3 +153,19 @@
 }
 
 
+
+@media (max-width: 768px) {
+  .timeline-container {
+    padding-left: 2rem;
+  }
+  .timeline-dot {
+    left: -1.75rem;
+  }
+  .timeline-content {
+    padding: 1.5rem;
+  }
+  .btn-view-cert {
+    width: 100%;
+    justify-content: center;
+  }
+}

@@ -197,3 +197,15 @@
   border-radius: 4px;
   font-style: italic;
 }
+
+@media (max-width: 768px) {
+  .cert-filter-btn {
+    padding: 0.5rem 1rem;
+    font-size: 0.65rem;
+    flex: 1;
+    text-align: center;
+  }
+  .certificates-grid {
+    gap: 1.5rem;
+  }
+}

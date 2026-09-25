@@ -101,3 +101,12 @@
   opacity: 1;
   transform: translate(2px, -2px);
 }
+
+@media (max-width: 768px) {
+  .contact-card {
+    padding: 1.5rem;
+  }
+  .contact-value, .contact-value-link {
+    font-size: 0.95rem;
+  }
+}

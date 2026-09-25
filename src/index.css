@@ -180,3 +180,20 @@ button {
 .slide-up {
   animation: slideUp 1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
+
+@media (max-width: 768px) {
+  :root {
+    --section-padding: 60px;
+  }
+  .section-container {
+    padding: 0 1.25rem;
+  }
+  .section {
+    min-height: auto;
+  }
+  .hero-section {
+    min-height: auto;
+    padding-top: calc(var(--nav-height) + 2rem);
+    padding-bottom: 2rem;
+  }
+}

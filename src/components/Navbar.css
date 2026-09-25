@@ -121,3 +121,16 @@
   border-left-color: var(--accent-cyan);
   color: var(--accent-cyan);
 }
+
+@media (max-width: 768px) {
+  .navbar-container {
+    padding: 0 1.25rem;
+  }
+  .navbar-logo svg {
+    width: 24px;
+    height: 24px;
+  }
+  .navbar-logo span {
+    font-size: 1rem !important;
+  }
+}

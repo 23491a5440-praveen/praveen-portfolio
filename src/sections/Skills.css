@@ -150,3 +150,12 @@
   overflow: hidden;
   text-overflow: ellipsis;
 }
+
+@media (max-width: 768px) {
+  .skills-layout {
+    gap: 2.5rem;
+  }
+  .skills-content-col {
+    gap: 2.5rem;
+  }
+}
